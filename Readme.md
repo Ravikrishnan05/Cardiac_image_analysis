@@ -66,9 +66,9 @@ The animation below shows the model's predictions on unseen validation data:
 
 Total_Loss = Weighted_Categorical_CrossEntropy + Weighted_Dice_Loss
 
-WCCE: Penalizes misclassified pixels with class weighting
-Dice: Optimizes overlap; crucial for shape integrity
-Combined Loss improves both spatial and pixel-level performance
+- WCCE: Penalizes misclassified pixels with class weighting
+- Dice: Optimizes overlap; crucial for shape integrity
+- Combined Loss improves both spatial and pixel-level performance
 
 ## 📈 Results & Analysis
 
