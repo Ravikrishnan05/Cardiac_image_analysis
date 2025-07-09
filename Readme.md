@@ -84,7 +84,10 @@ Total_Loss = Weighted_Categorical_CrossEntropy + Weighted_Dice_Loss
 ### 📉 Training Curves
 | Loss Curve | Mean IoU Curve |
 |------------|----------------|
-| <img src="https://i.imgur.com/vHq0F7B.png" width="400"/> | <img src="https://i.imgur.com/kY7pU4o.png" width="400"/> |
+
+[![Screenshot-2025-07-08-221840.png](https://i.postimg.cc/L41xwg9S/Screenshot-2025-07-08-221840.png)](https://postimg.cc/nMnKQz9S)
+
+[![Screenshot-2025-07-08-221900.png](https://i.postimg.cc/KjCSZ6KY/Screenshot-2025-07-08-221900.png)](https://postimg.cc/T5jH0HJ8)
 
 **Loss**: Validation loss decreased and plateaued → good generalization  
 **IoU**: Gradual improvement → steady learning, minimal overfitting
