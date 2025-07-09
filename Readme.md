@@ -70,5 +70,41 @@ WCCE: Penalizes misclassified pixels with class weighting
 Dice: Optimizes overlap; crucial for shape integrity
 Combined Loss improves both spatial and pixel-level performance
 
+## 📈 Results & Analysis
+
+### 📊 Quantitative Metrics
+| Metric | Score | Interpretation |
+|--------|-------|----------------|
+| Validation Loss | 2.3366 | Final combined error score |
+| Validation Mean IoU | 0.3752 | Primary metric — moderate overlap |
+| Recall (RV) | 0.6352 | 63.5% of RV pixels correctly identified |
+| Recall (MYO) | 0.5336 | 53.4% of MYO pixels detected |
+| Recall (LV) | 0.4386 | 43.9% of LV pixels captured |
+
+### 📉 Training Curves
+| Loss Curve | Mean IoU Curve |
+|------------|----------------|
+| <img src="https://i.imgur.com/vHq0F7B.png" width="400"/> | <img src="https://i.imgur.com/kY7pU4o.png" width="400"/> |
+
+**Loss**: Validation loss decreased and plateaued → good generalization  
+**IoU**: Gradual improvement → steady learning, minimal overfitting
+
+### 🖼️ Qualitative Predictions
+#### ✅ Good Example
+| Input | Ground Truth | Prediction |
+|-------|--------------|------------|
+| <img src="https://via.placeholder.com/150" width="150"/> | <img src="https://via.placeholder.com/150" width="150"/> | <img src="https://via.placeholder.com/150" width="150"/> |
+
+#### ⚠️ Challenging Example
+| Input | Ground Truth | Prediction |
+|-------|--------------|------------|
+| <img src="https://via.placeholder.com/150" width="150"/> | <img src="https://via.placeholder.com/150" width="150"/> | <img src="https://via.placeholder.com/150" width="150"/> |
+
+## 💻 How to Run
+1. **Clone Repository**
+```bash
+git clone https://github.com/your-username/cardiac-segmentation-unet.git
+cd cardiac-segmentation-unet
+
 
 
