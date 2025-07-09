@@ -89,22 +89,25 @@ Combined Loss improves both spatial and pixel-level performance
 **Loss**: Validation loss decreased and plateaued → good generalization  
 **IoU**: Gradual improvement → steady learning, minimal overfitting
 
-### 🖼️ Qualitative Predictions
-#### ✅ Good Example
-| Input | Ground Truth | Prediction |
-|-------|--------------|------------|
-| <img src="https://via.placeholder.com/150" width="150"/> | <img src="https://via.placeholder.com/150" width="150"/> | <img src="https://via.placeholder.com/150" width="150"/> |
-
-#### ⚠️ Challenging Example
-| Input | Ground Truth | Prediction |
-|-------|--------------|------------|
-| <img src="https://via.placeholder.com/150" width="150"/> | <img src="https://via.placeholder.com/150" width="150"/> | <img src="https://via.placeholder.com/150" width="150"/> |
 
 ## 💻 How to Run
 1. **Clone Repository**
 ```bash
 git clone https://github.com/your-username/cardiac-segmentation-unet.git
 cd cardiac-segmentation-unet
+```
+2. **Install Requirements***
+```bash
+pip install -r requirements.txt
+```
+3. Run Training
+```bash
+python train.py --batch_size 16 --epochs 100
+```
+4. Evaluate Model
+```bash
+python evaluate.py --model_path models/best_model.h5
+```
 
 
 
